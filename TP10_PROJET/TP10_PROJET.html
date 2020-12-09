@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet</title>
+    <script src="js/Projet_tp10.js"></script>
+
+</head>
+<body>
+    <section>
+        
+        <!-- ***MON FORMULAIRE*** -->
+
+        <form id="ListeDeCours" action=# onSubmit='return ajouterNaissance(this);'>
+            <fieldset>
+              <legend>Fiche de Naissances</legend>
+              <!-- nom -->
+              <label for="ajouterNom">Nom :    </label>
+              <input id="ajouterNom" name="nom" type="text" required> <br>
+              <!-- Prenom -->
+              <label for="ajouterPrenom">Prénom :</label>
+              <input id="ajouterPrenom" name="prénom" type="text" required> <br>
+              <!-- Date de naissance -->              
+              <label for="ajouterDate">Date de la naissance : </label>
+              <input id="ajouterDate" name="date" type="date" required><br>
+              <!-- sexe -->              
+              <label for="ajouterSexe">Sexe : </label>
+              <select id="ajouterSexe" name="sexe">
+                <option value="garcon" selected>Garcon</option>
+                <option value="fille">Fille</option>
+              </select><br>
+              <!-- description -->
+              <label for="aujouterDesc">Etat de santé : </label>
+              <textarea id="aujouterDesc" name="description" rows="1" cols="50"></textarea><br>              
+              <!-- bouton -->
+              <input type="submit" value="Ajouter Naissance">
+              <input type="reset">
+            </fieldset>
+        </form>
+
+    </section>
+</body>
+</html>
